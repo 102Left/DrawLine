@@ -6,19 +6,22 @@ namespace DrawLine
 {
     class Line
     {
-        public List<Point> Points { get; set; }
+        public Point Start { get; set; }
+        public Point End { get; set; }
 
-        public Line()
+        public Line(){}
+
+        public Line(Point Start, Point End)
         {
-            this.Points = new List<Point>();
+
+            this.Start = new Point(Start);
+            this.End = new Point(End);
         }
-        public Line(List<Point> points)
-        {
-            this.Points = new List<Point>(points);
-        }
+
         public Line(Line source)
         {
-            this.Points = new List<Point>(source.Points);
+            this.Start = new Point(source.Start);
+            this.End = new Point(source.End);
         }
     }
 }
