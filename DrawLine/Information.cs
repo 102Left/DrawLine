@@ -15,6 +15,7 @@ namespace DrawLine
         public static DxColor BackColor;
         public static DxColor LineColor;
         public static int GridNumber;
+        public static int CircleErrorRange;
 
         public static List<List<Line>> Lines = new List<List<Line>>();
 
