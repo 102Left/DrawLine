@@ -45,7 +45,7 @@ namespace DrawLine
 
         static void input()
         {
-
+            //見ました＠川上
         }
     }
 }
